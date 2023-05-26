@@ -4,7 +4,15 @@
     margin: 0; 
     padding: 0;
 }
-
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
 body {
     border:2px solid rgb(41, 41, 41);
     display: flex;
@@ -45,15 +53,7 @@ body {
 .container{
     overflow-y: scroll;
 }
-/* For WebKit-based browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 0.5em;
-    background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: transparent;
-  }
+
 textarea {
     resize: None;
     width:calc(100%-6px);
@@ -107,16 +107,19 @@ li {
     background-color:rgb(51, 51, 51) ;
     padding:5px 0px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 40px;
     /* width:100%; */
     overflow: hidden;
     /* margin-right:-10px; */
-    border-left:3px solid rgb(243, 205, 124);
     position:relative;
     cursor:pointer;
+    transition: .5s;
 }
 li:hover h3 {
     color:white;
+}
+.left:hover li {
+    margin-left: 10px;
 }
 .deleteItem {
     position:absolute;
@@ -131,7 +134,7 @@ li:hover h3 {
     transition: .5s;
     padding-right:5px;
     cursor:pointer;
-
+    
 }
 .deleteItem:hover span {
     color:white;
@@ -143,18 +146,28 @@ li:hover .deleteItem {
     align-items: center; */
 }
 .addItem {
+    opacity: 0;
     background-color:transparent;
     outline:none;
     border:none;
     padding-left:5px;
     padding-top:5px;
     cursor: pointer;
+    transition: .5s;
 }
 .addItem * {
     /* color:rgb(150, 148, 148); */
     color:rgb(168, 168, 168);
-
+    
 }
 .addItem:hover * {
     color:white;
+}
+.left:hover .addItem {
+    opacity: 1;
+}
+.focus{
+    /* background: red; */
+    border-left:3px solid rgb(243, 205, 124);
+    margin-left:30px
 }
