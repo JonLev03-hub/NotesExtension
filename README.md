@@ -1,6 +1,7 @@
 # NotesExtension
 This is a chrome extension that you are able to install that will add a hotkey crtl+shift+f to open up notes in your browser.
-![image](https://github.com/JonLev03-hub/NotesExtension/assets/81537476/399d48a9-ff02-49d0-8752-62dd8292cc6e)
+![image](https://github.com/JonLev03-hub/NotesExtension/assets/81537476/c91eb916-5311-4440-9749-12940518252b)
+![image](https://github.com/JonLev03-hub/NotesExtension/assets/81537476/0ea71f76-c3d5-4194-8274-46c260456e5a)
 
 The extension allows you to create notes, edit the titles, and body text, and delete notes. Its a basic crud application for your browser.
 
